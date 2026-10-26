@@ -5,11 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>勤學補習班</title>
 <meta name="description" content="勤學補習班：國小安親/課輔、國中數學/理化、國中會考總複習班。">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;900&display=swap" rel="stylesheet">
 <style>
 body{margin:0;font-family:system-ui,"Noto Sans TC",sans-serif;background:#f7f7f5;color:#222;line-height:1.7}
-header{background:#1f3a5f;color:#fff;text-align:center;padding:64px 16px}
-header h1{margin:0;font-size:2.4rem;letter-spacing:.1em}
-header p{margin:8px 0 0;opacity:.85}
+header{position:relative;overflow:hidden;text-align:center;color:#fff;padding:56px 16px 48px;background:repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 14px,transparent 14px 28px),radial-gradient(circle at 50% 0,#2c5aa0,#13284a 75%);border-bottom:8px solid #ffcc00}
+.ribbon{position:absolute;top:22px;left:-46px;transform:rotate(-45deg);background:#e53935;color:#fff;font-weight:900;padding:6px 56px;font-size:1rem;letter-spacing:.15em;box-shadow:0 3px 6px rgba(0,0,0,.3)}
+.burst{position:absolute;top:18px;right:18px;width:96px;height:96px;background:#ffcc00;color:#c62828;font-weight:900;font-size:1.05rem;line-height:1.2;display:flex;align-items:center;justify-content:center;clip-path:polygon(50% 0,61% 15%,79% 9%,80% 27%,98% 32%,88% 48%,98% 66%,80% 70%,79% 90%,61% 84%,50% 100%,39% 84%,21% 90%,20% 70%,2% 66%,12% 48%,2% 32%,20% 27%,21% 9%,39% 15%);transform:rotate(12deg)}
+.kicker{display:inline-block;background:#fff;color:#13284a;font-weight:900;padding:4px 18px;border-radius:999px;letter-spacing:.2em;margin-bottom:14px}
+header h1{margin:0;font-size:clamp(3rem,13vw,5.6rem);font-weight:900;letter-spacing:.12em;line-height:1.1;color:#ffcc00;-webkit-text-stroke:8px #8a1c1c;paint-order:stroke fill;text-shadow:6px 6px 0 rgba(0,0,0,.35)}
+.slogan{margin:14px 0 18px;font-size:clamp(1.1rem,4.5vw,1.6rem);font-weight:900;letter-spacing:.1em}
+.slogan span{color:#ffcc00}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:0;padding:0;list-style:none}
+.chips li{background:#e53935;font-weight:900;padding:6px 16px;border-radius:6px;box-shadow:0 3px 0 #8a1c1c;font-size:1.05rem}
+.chips li:nth-child(2){background:#1e88e5;box-shadow:0 3px 0 #0d47a1}
+.chips li:nth-child(3){background:#43a047;box-shadow:0 3px 0 #1b5e20}
+.call{display:inline-block;margin-top:22px;background:#ffcc00;color:#8a1c1c;font-weight:900;font-size:clamp(1.1rem,4.5vw,1.5rem);padding:8px 24px;border-radius:12px;border:3px dashed #8a1c1c}
+@media(max-width:520px){.burst{width:72px;height:72px;font-size:.85rem;top:10px;right:8px}.ribbon{font-size:.8rem;top:14px;left:-48px;padding:5px 50px}header{padding-top:72px}}
 main{max-width:860px;margin:0 auto;padding:32px 16px}
 section{background:#fff;border-radius:12px;padding:24px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
 h2{margin-top:0;color:#1f3a5f}
@@ -23,8 +34,17 @@ footer{text-align:center;color:#888;font-size:.9rem;padding:24px}
 </head>
 <body>
 <header>
+<div class="ribbon">熱烈招生中</div>
+<div class="burst">會考<br>衝刺!</div>
+<div class="kicker">國小・國中 課業輔導</div>
 <h1>勤學補習班</h1>
-<p>國小・國中課業輔導｜用心陪伴每一位孩子學習</p>
+<p class="slogan">用心陪伴 <span>★</span> 成績看得見</p>
+<ul class="chips">
+<li>國小安親課輔</li>
+<li>國中數學理化</li>
+<li>會考總複習</li>
+</ul>
+<div class="call">☎ 報名專線 6998519</div>
 </header>
 <main>
 <section>
